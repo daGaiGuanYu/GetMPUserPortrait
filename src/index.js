@@ -8,7 +8,10 @@ function getYesterdayData(appid, appsecret){
     .then( access_token => axios.post('https://api.weixin.qq.com/datacube/getweanalysisappiduserportrait?access_token=' + access_token, {
       begin_date: yesterdayStr,
       end_date: yesterdayStr
-    })).then( res => res.data )
+    })).then( res => ({
+      data: res.data,
+      date: yesterdayStr
+    }))
 }
 
 function getYesterdayStr(){
