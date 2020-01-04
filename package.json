@@ -1,11 +1,7 @@
 {
   "name": "getmpuserportrait",
-  "version": "1.0.0",
-  "description": "",
+  "version": "1.1.0",
   "main": "src/index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/daGaiGuanYu/GetMPUserPortrait.git"
