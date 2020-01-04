@@ -1,0 +1,26 @@
+{
+  "name": "getmpuserportrait",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daGaiGuanYu/GetMPUserPortrait.git"
+  },
+  "keywords": [
+    "微信小程序",
+    "用户画像"
+  ],
+  "author": "gy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daGaiGuanYu/GetMPUserPortrait/issues"
+  },
+  "homepage": "https://github.com/daGaiGuanYu/GetMPUserPortrait#readme",
+  "dependencies": {
+    "axios": "^0.19.0"
+  }
+}
