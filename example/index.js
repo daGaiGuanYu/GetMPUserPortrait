@@ -1,5 +1,7 @@
-const getMPUserPortrait = require('getmpuserportrait')
+const MPUserPortrait = require('../src/index')
+const config = require('./config')
 
-getMPUserPortrait('appid', 'appsecret').then( res => {
+let test = new MPUserPortrait(config.appid, config.appsecret)
+test.get7().then( res => {
   console.log(res)
 })
