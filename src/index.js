@@ -1,6 +1,12 @@
+// @ts-check
+
 const axios = require('axios')
 
 class MPUserPortrait {
+  /**
+   * @param {String} appid
+   * @param {String} appsecret 
+   */
   constructor(appid, appsecret){
     this.appid = appid
     this.appsecret = appsecret
