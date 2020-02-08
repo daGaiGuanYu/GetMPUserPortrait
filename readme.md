@@ -10,10 +10,20 @@ npm install getmpuserportrait
 ```
 ##### 获取昨天用户画像
 ``` javascrip
-const getMPUserPortrait = require('getmpuserportrait')
+const MPUserPortrait = require('../src/index')
+const config = require('./config')
 
-// 下面的 appid 和 appsecret 要换成自己公众号的，在浏览器登录好公众号后，打开这个网页就可以看到了：https://mp.weixin.qq.com/wxamp/devprofile/get_profile?token=1348860549&lang=zh_CN
-getMPUserPortrait('appid', 'appsecret').then( res => {
+let test = new MPUserPortrait(config.appid, config.appsecret) // 这里换成你的 appid 和 appsecret
+
+test.get7().then( res => { // 获取 7 天数据
+  console.log(res)
+})
+
+test.get().then( res => { // 获取昨天数据
+  console.log(res)
+})
+
+test.get30().then( res => { // 获取 30 天数据
   console.log(res)
 })
 
